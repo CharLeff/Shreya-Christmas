@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🎄 Christmas Jeopardy</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="snow" id="snow" aria-hidden="true"></div>
+
+  <header class="wrap">
+    <section class="hero">
+      <div class="heroLeft">
+        <h1>🎄 Christmas Jeopardy</h1>
+        <p class="sub">
+          Pick a card, answer out loud, and earn money. Hit <b>$5000</b> to unlock the letter.
+          <br />
+          No penalty for skipping — this is a Christmas vibe, not an exam.
+        </p>
+      </div>
+
+      <div class="heroRight">
+        <div class="statsRow">
+          <div class="pill">
+            <small>Current Total</small>
+            <strong id="score">$0</strong>
+          </div>
+          <div class="pill">
+            <small>Goal</small>
+            <strong>$5000</strong>
+          </div>
+        </div>
+
+        <div class="progress" aria-label="Progress to goal">
+          <div class="bar" id="progressBar"></div>
+        </div>
+
+        <div class="unlock">
+          <div class="unlockText">
+            <strong id="unlockStatus">🔒 Letter locked</strong>
+            <span id="unlockHint">Earn $5000 to unlock it.</span>
+          </div>
+
+          <div class="unlockBtns">
+            <button type="button" class="btnGhost" id="resetBtn" title="Reset the game">Reset</button>
+            <button class="btnPrimary btnLocked" id="openLetterBtn" disabled>Open Letter ✨</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="wrap">
+    <section class="board" aria-label="Jeopardy board">
+      <div class="grid gridCats" id="categories"></div>
+      <div class="grid gridCells" id="grid"></div>
+
+      <div class="footerNote">
+        <div>Tip: Say it out loud first, then click “Reveal Answer” if you want to check.</div>
+        <div><span class="ice">❄️</span> Made with love.</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modalOverlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Clue dialog">
+      <div class="modalHeader">
+        <strong id="modalTitle">Clue</strong>
+        <button class="x" id="closeModalBtn" aria-label="Close">✕</button>
+      </div>
+
+      <div class="modalBody">
+        <p class="clue" id="modalClue">Clue text</p>
+        <p class="hint" id="modalHint">Hint text</p>
+
+        <div class="answerBox" id="answerBox" hidden>
+          <div class="answerLabel">Answer</div>
+          <div class="answerText" id="modalAnswer">Answer goes here</div>
+        </div>
+      </div>
+
+      <div class="modalActions">
+        <button class="btnGhost" id="revealBtn">Reveal Answer 👀</button>
+        <div class="modalActionsRight">
+          <button class="btnGhost" id="skipBtn">Skip (0)</button>
+          <button class="btnPrimary" id="gotItBtn">I got it (+$<span id="valSpan">0</span>)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
