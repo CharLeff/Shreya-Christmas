@@ -7,7 +7,7 @@
    ============================ */
 
 (() => {
-  const GOAL = 5000;
+  const GOAL = 10000;
   const VALUES = [200, 400, 600, 800, 1000];
 
   // ✅ Edit everything here
@@ -17,10 +17,10 @@
       {
         name: "Trips",
         tiles: [
-          { q: "How did you pick Charlie up on our first trip?", a: "[PLACEHOLDER: answer not provided yet]", hint: "" },
+          { q: "How did you pick Charlie up on our first trip?", a: "Took BART to SFO", hint: "" },
           { q: "Best Trip?", a: "Freebie (your choice)", hint: "" },
-          { q: "[PLACEHOLDER: Trips $600 question]", a: "[PLACEHOLDER: answer]", hint: "" },
-          { q: "[PLACEHOLDER: Trips $800 question]", a: "[PLACEHOLDER: answer]", hint: "" },
+          { q: "When and where did we have our first magical mushroom experience togeter?", a: "Albany, hiking the hill behind Julie's place", hint: "" },
+          { q: "Charlie once (stupidly) planned his trip to end a week after the day he thought it was ending. What day was that?", a: "Monday", hint: "" },
           { q: "How many trips have we had (± 2)?", a: "12", hint: "" },
         ],
       },
@@ -28,37 +28,37 @@
         name: "Early Moments",
         tiles: [
           { q: "What year did we have our first conversation?", a: "2017", hint: "" },
-          { q: "placeholder", a: "[PLACEHOLDER: answer]", hint: "" },
-          { q: "placeholder", a: "[PLACEHOLDER: answer]", hint: "" },
-          { q: "placeholder", a: "[PLACEHOLDER: answer]", hint: "" },
-          { q: "placeholder", a: "[PLACEHOLDER: answer]", hint: "" },
+          { q: "In what car did Charlie first pick you up?", a: "Charlie's Chevy Volt", hint: "" },
+          { q: "Where did we have our first group hangout?", a: "Library & Luna's basement", hint: "" },
+          { q: "What three guys did shreya rotate between in highschool?", a: "Charlie, Morgan(a), Brian", hint: "" },
+          { q: "What values did charlie say he had in highschool, and what values did shreya say she had?", a: "Republican, christian", hint: "" },
         ],
       },
       {
         name: "Inside Jokes",
         tiles: [
-          { q: "Where does Charlie plan on proposing?", a: "Campanile", hint: "" },
-          { q: "If you were to cheat on me with one person, who would it be?", a: "Julie", hint: "" },
+          { q: "Where does Charlie plan on proposing?", a: "Harry Potter world", hint: "" },
+          { q: "Charlie's favorite tiktok account is?", a: "Shreya's league thirst trap tiktok", hint: "" },
           { q: "Who would most likely be killed, if Shreya was unhappy in her relationship?", a: "Shreya", hint: "" },
-          { q: "placeholder", a: "[PLACEHOLDER: answer]", hint: "" },
-          { q: "placeholder", a: "[PLACEHOLDER: answer]", hint: "" },
+          { q: "What word does Shreya thinks is hilarious when she says it, but doesn't want Charlie to start copying?", a: "nigga", hint: "" },
+          { q: "If you were to cheat on me with one person, who would it be?", a: "Julie", hint: "" },
         ],
       },
       {
         name: "Geography",
         tiles: [
-          { q: "Where did we begin your birthday eating bagels in 2024?", a: "Harry Potter World", hint: "" },
-          { q: "Where was I waiting for you, nervously, to ask you out 'officially'?", a: "[PLACEHOLDER: answer not provided yet]", hint: "" },
+          { q: "Where did we begin your birthday eating bagels in 2024?", a: "Campenelle", hint: "" },
           { q: "In what city did we have our first Dave's Hot Chicken?", a: "Milwaukee", hint: "" },
-          { q: "placeholder", a: "[PLACEHOLDER: answer]", hint: "" },
-          { q: "placeholder", a: "[PLACEHOLDER: answer]", hint: "" },
+          { q: "Where was I waiting for you, nervously, to ask you out 'officially'?", a: "on the bench outside MLK building", hint: "" },
+          { q: "In what city have we gone to a museum?", a: "St. Paul", hint: "" },
+          { q: "In what town did Harry Potter grow up, and is also where his parents died?", a: "Godric's Hollow", hint: "Godric's stomach after ramadan" },
         ],
       },
       {
         name: "Charlie",
         tiles: [
           { q: "What could I not eat for 8 years?", a: "Cheese", hint: "" },
-          { q: "What was the first game I was exceptional at?", a: "Call of Duty 4: Modern Warfare", hint: "" },
+          { q: "What was the first game I was exceptional at (competitive)?", a: "Call of Duty 4: Modern Warfare", hint: "" },
           { q: "What age did I lose my front teeth?", a: "2", hint: "" },
           { q: "What was my favorite condiment growing up?", a: "Ketchup", hint: "" },
           { q: "What was the name of the suburb of Detroit Charlie was born in?", a: "Ferndale", hint: "" },
