@@ -51,7 +51,7 @@
           { q: "In what city did we have our first Dave's Hot Chicken?", a: "Milwaukee", hint: "" },
           { q: "Where was I waiting for you, nervously, to ask you out 'officially'?", a: "on the bench outside MLK building", hint: "" },
           { q: "In what city have we gone to a museum?", a: "St. Paul", hint: "" },
-          { q: "In what town did Harry Potter grow up, and is also where his parents died?", a: "Godric's Hollow", hint: "Godric's stomach after ramadan" },
+          { q: "In what town did Harry Potter grow up, and is also where his parents died?", a: "Godric's Hollow", hint: "Hint: Godric's stomach after ramadan" },
         ],
       },
       {
@@ -367,6 +367,7 @@
         // Unlock moment
         if (before < GOAL && score >= GOAL) {
           confettiBurst();
+          unlockText.classList.add("unlocked");
           showToast("🎉 You unlocked the letter!");
         }
       });

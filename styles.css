@@ -15,6 +15,9 @@
 
   --danger1:#ff7a7a;
   --danger2:#ff3d3d;
+
+  --red:#b11226;        /* deep Christmas red */
+  --red-soft:#e34b5f;  /* softer accent red */
 }
 
 *{box-sizing:border-box}
@@ -29,6 +32,34 @@ body{
     linear-gradient(180deg, var(--bg1), var(--bg2));
   color:#eef7f1;
   overflow-x:hidden;
+}
+.unlockText strong{
+  color: var(--mint);
+}
+
+.unlockText.unlocked strong{
+  color: var(--red-soft);
+}
+
+
+
+.cell:hover{
+  box-shadow:
+    0 10px 20px rgba(0,0,0,.25),
+    0 0 0 1px rgba(177,18,38,.45);
+}
+
+.red{
+  color: var(--red-soft);
+}
+
+.cat{
+  background:
+    linear-gradient(180deg,
+      rgba(177,18,38,.22),
+      rgba(255,255,255,.06)
+    );
+  border: 1px solid rgba(177,18,38,.35);
 }
 
 .wrap{
